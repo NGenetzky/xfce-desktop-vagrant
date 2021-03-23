@@ -79,10 +79,10 @@ su vagrant -c bash <<'VAGRANT_EOF'
 #!/bin/bash
 set -eux
 cd ~
-vagrant plugin install vagrant-reload
+vagrant plugin install vagrant-reload || true
 CONFIGURE_ARGS='with-libvirt-include=/usr/include/libvirt with-libvirt-lib=/usr/lib' \
-    vagrant plugin install vagrant-libvirt
-vagrant plugin install vagrant-windows-update
+    vagrant plugin install vagrant-libvirt || true
+vagrant plugin install vagrant-windows-update || true
 VAGRANT_EOF
 # add support for smb shared folders.
 # see https://github.com/hashicorp/vagrant/pull/9948
