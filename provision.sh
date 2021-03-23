@@ -83,8 +83,8 @@ find .config -type f -exec chmod 600 {} \;
 
 # configure git.
 # see http://stackoverflow.com/a/12492094/477532
-git config --global user.name 'Rui Lopes'
-git config --global user.email 'rgl@ruilopes.com'
+git config --global user.name 'Nathan Genetzky'
+git config --global user.email 'nathan@genetzky.us'
 git config --global push.default simple
 git config --global diff.guitool meld
 git config --global difftool.meld.path meld
