@@ -53,7 +53,7 @@ code_extensions=(
     'zamerick.vscode-caddyfile-syntax'
 )
 for name in ${code_extensions[@]}; do
-    code --install-extension $name
+    code --install-extension $name || true
 done
 # configure the settings.
 install -d ~/.config/Code/User
